@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: | "ealing" | "japanesenods" | Welcome Ealing Council |
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.181 sec <<< FAILURE! - in | "ealing" | "japanesenods" | Welcome Ealing Council |
+Then Message displayed is : Welcome Ealing Council(| "ealing" | "japanesenods" | Welcome Ealing Council |)  Time elapsed: 0.034 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<true> but was:<Text not found!>
+
