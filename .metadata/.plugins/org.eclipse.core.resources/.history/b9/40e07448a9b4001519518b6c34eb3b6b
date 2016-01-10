@@ -1,0 +1,31 @@
+package com.cucumber.mavenAutobarsAutomation;
+
+import org.openqa.selenium.WebDriver;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Then;
+
+public class EndtoEndTest {
+
+	WebDriver driver;
+
+
+@And("^user clicks Click to attach file$")
+public void user_clicks_Click_to_attach_file() throws Throwable {
+}
+
+@And("^selects a valid BA XML file$")
+public void selects_a_valid_BA_XML_file() throws Throwable {
+
+}
+
+@And("^clicks Submit$")
+public void clicks_Submit() throws Throwable {
+
+}
+
+@Then("^<> out of <> reports should be submitted successfully$")
+public void _out_of_reports_should_be_submitted_successfully() throws Throwable {
+
+}
+}

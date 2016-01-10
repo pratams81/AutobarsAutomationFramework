@@ -1,0 +1,36 @@
+package com.cucumber.mavenAutobarsAutomation;
+
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class EndtoEndTest {
+
+
+@When("^user clicks Council Tax link$")
+public void user_clicks_Council_Tax_link() throws Throwable {
+    driver.findElement(By.linkText("Council Tax")).click();
+}
+
+@When("^user clicks Upload Reports link$")
+public void user_clicks_Upload_Reports_link() throws Throwable {
+}
+
+@When("^user clicks Click to attach file$")
+public void user_clicks_Click_to_attach_file() throws Throwable {
+}
+
+@When("^selects a valid BA XML file$")
+public void selects_a_valid_BA_XML_file() throws Throwable {
+
+}
+
+@When("^clicks Submit$")
+public void clicks_Submit() throws Throwable {
+
+}
+
+@Then("^<> out of <> reports should be submitted successfully$")
+public void _out_of_reports_should_be_submitted_successfully() throws Throwable {
+
+}
+}

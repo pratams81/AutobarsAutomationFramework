@@ -1,0 +1,50 @@
+package com.cucumber.mavenAutobarsAutomation;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class EndtoEndTest {
+
+
+@When("^user clicks Council Tax link$")
+public void user_clicks_Council_Tax_link() throws Throwable {
+}
+
+@When("^user clicks Upload Reports link$")
+public void user_clicks_Upload_Reports_link() throws Throwable {
+}
+
+@When("^user clicks Click to attach file$")
+public void user_clicks_Click_to_attach_file() throws Throwable {
+}
+
+@When("^selects a valid BA XML file$")
+public void selects_a_valid_BA_XML_file() throws Throwable {
+
+}
+
+@When("^clicks Submit$")
+public void clicks_Submit() throws Throwable {
+    // Express the Regexp above with the code you wish you had
+    throw new PendingException();
+}
+
+@Then("^<> out of <> reports should be submitted successfully$")
+public void _out_of_reports_should_be_submitted_successfully() throws Throwable {
+    // Express the Regexp above with the code you wish you had
+    throw new PendingException();
+}
+}

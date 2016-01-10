@@ -1,0 +1,4 @@
+Feature: Tests Successful and failed login conditions
+
+  Scenario Outline: Test SUCCESSFUL login functionality using VALID credentials
+    Given User is on the page

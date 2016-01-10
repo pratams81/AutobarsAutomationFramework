@@ -1,0 +1,4 @@
+Feature: Tests Successful and failed login conditions
+
+Scenario Outline: Testlogin
+Give User is on the page

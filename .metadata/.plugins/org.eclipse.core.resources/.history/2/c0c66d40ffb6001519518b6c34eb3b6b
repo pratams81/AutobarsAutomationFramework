@@ -1,0 +1,252 @@
+package com.cucumber.mavenAutobarsAutomation;
+
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Autobars_Login_LogoutTest  {
+	WebDriver driver = new FirefoxDriver();
+	
+	
+	@Given("^User is on page : (.*)$") 
+	public void go_to_autobar(String url){
+	   driver.get(url);
+       driver.manage().window().maximize();
+
+	}
+	
+	@Given("^User is on the page") 
+	public void go_to_autobar1(){
+		String splitBy = ",";
+        BufferedReader br = null;
+		try {
+			br = new BufferedReader(new FileReader("DefaulSetupHelper.csv"));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        String line;
+        String[] b = null;
+		try {
+			line = br.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        try {
+			while ((line = br.readLine()) !=null){
+			     b = line.split(splitBy);
+			     System.out.println(b[0]);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        try {
+			br.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	  
+	driver.get(b[0]);
+       driver.manage().window().maximize();
+
+	}
+	
+	@Given("^I enter a \"([^\"]*)\"$")
+	public void i_enter_a(String username) throws Throwable {
+		//driver.findElement(By.id("UserName")).sendKeys(username);
+		
+		LoginPageTest.getusername(driver).sendKeys(username);
+	}
+
+	@Given("^I enter \"([^\"]*)\"$")
+	public void i_enter(String password) throws Throwable {
+		LoginPageTest.getpassword(driver).sendKeys(password);
+
+	}
+
+	
+		
+	/*
+	
+	@And("^I enter a username and password$")
+	public void ValidUsernamePassword(DataTable table) throws Throwable {
+		
+		List<List<String>> data = table.raw();
+		
+		driver.findElement(By.id("UserName")).sendKeys(data.get(1).get(1));
+		driver.findElement(By.id("UserPassword")).sendKeys(data.get(2).get(1));
+  
+	}
+	
+	
+	@And ("^user enters username : (.*)$")
+	public void enter_username(String uname){
+		driver.findElement(By.id("UserName")).sendKeys(uname);
+		
+	}
+	
+	@And ("^user enters password : (.*)$")
+	public void enter_password(String pswd){
+		driver.findElement(By.id("UserPassword")).sendKeys(pswd);
+		
+	}
+	
+		*/
+
+	@And ("User clicks Signin$")
+	public void user_clicks_Signin() throws Throwable {
+		LoginPageTest.getSignInButton(driver).click();
+	       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+	}
+
+	@Then("^Message displayed is : (.*)$")
+	public void verify_welcome_message(String msg){
+		
+		String bodyText = driver.findElement(By.tagName("h1")).getText();
+		Assert.assertTrue("Text not found!", bodyText.contains(msg));
+				
+	}
+	
+	@Then("^Error message displayed is : (.*)$")
+	public void VerifyErrorMsg(String msg){
+		
+		String bodyText = driver.findElement(By.cssSelector("div.error-summary > p")).getText();
+		Assert.assertTrue("Text not found!", bodyText.contains(msg));
+				
+	}
+	
+	@When("^user signsout from the autobars application$")
+	public void user_signsout_from_the_autobars_application() throws Throwable {
+		
+		driver.findElement(By.cssSelector("li.logout > a")).click();
+	       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+	}
+	
+	@When("^user clicks Council Tax link$")
+	public void user_clicks_Council_Tax_link() throws Throwable {
+	    driver.findElement(By.linkText("Council Tax")).click();
+	}
+
+	@Then("^Council Tax page is opened$")
+	public void Council_tax_page_opened() throws Throwable {
+		String bodyText = driver.findElement(By.tagName("h1")).getText();
+		Assert.assertTrue("Text not found!", bodyText.contains("Council Tax"));
+	}
+	
+	@When("^User clicks to attach file from path :$")
+	public void attach_file() throws Throwable {
+			
+		WebElement DropZone = driver.findElement(By.id("reportsDropzone"));
+		WebElement Dropzonelink = DropZone.findElement(By.xpath("//div[contains(@class,'dz-default')]"));
+		
+	    driver.switchTo()
+	            .activeElement()
+	            .sendKeys(
+	                    "C:\\AUTOBARS\\BA files\\XML FILES\\Cardiff\\Cardiff_CT_New.xml");
+	    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	    
+	 // hit enter
+	    Robot r = new Robot();
+	    r.keyPress(KeyEvent.VK_ENTER);
+	    r.keyRelease(KeyEvent.VK_ENTER);
+
+	    // switch back
+	    driver.switchTo().activeElement();
+	
+	}
+	
+	@When("^user clicks on Submit$")
+	public void click_submit() throws Throwable {
+		driver.findElement(By.linkText("Submit")).click();
+	}
+	
+	
+	@Then("^Upload your Council Tax Reports is opened$")
+	public void Upload_tax_Reports() throws Throwable {
+		String bodyText = driver.findElement(By.tagName("h1")).getText();
+		Assert.assertTrue("Text not found!",bodyText.contains("Upload your Council Tax Reports"));
+	}
+	
+	@When("^user clicks Upload Reports link$")
+	public void user_clicks_Upload_Reports_link() throws Throwable {
+	    driver.findElement(By.linkText("Upload Reports")).click();
+	}
+	
+	@And ("^close the browser$")
+	public void close_the_browser() throws Throwable {
+		
+        driver.close();
+
+	}
+	
+	
+	
+	
+}
+
+
+/*	@Given("^User is on autobars BA login page$")
+public void user_is_on_autobars_BA_login_page() throws Throwable {
+// Create a new instance of the Firefox driver
+ //Launch the Autobars alpha prototype url
+   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+ driver.get("http://alpha.autobars-voa-gov.uk/");
+ driver.manage().window().maximize();
+
+
+}
+
+	@When ("^User enters Username and Password$")
+	public void user_enters_Username_and_Password(DataTable table) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+        //driver.findElement(By.id("UserName")).sendKeys("ealing"); 
+        //driver.findElement(By.id("UserPassword")).sendKeys("japanesenods");
+		
+		List<Map<String,String>> data=table.asMaps(String.class,String.class);
+		
+		System.out.println("username " +data.get(0).get("Username"));
+		System.out.println("password " +data.get(0).get("Password"));
+		//System.out.println("username " +data.get(1).get("Username"));
+		//System.out.println("password " +data.get(1).get("Password"));
+		
+		int counter = data.size();
+		System.out.println(counter);
+		
+		for(int i=0;i<counter;i++)
+		{
+			driver.findElement(By.id("UserName")).sendKeys(data.get(i).get("Username")); 
+	        driver.findElement(By.id("UserPassword")).sendKeys(data.get(i).get("Password"));
+		}
+		
+	
+
+	}
+
+@Then("^Message displayed Welcome Ealing Council page$")
+	public void message_displayed_Welcome_Ealing_Council_page() throws Throwable {
+        System.out.println("Welcome Ealing Council ");
+
+	}
+*/

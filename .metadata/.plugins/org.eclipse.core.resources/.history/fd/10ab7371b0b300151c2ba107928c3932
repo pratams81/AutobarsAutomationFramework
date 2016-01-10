@@ -1,0 +1,14 @@
+Feature: Tests Successful and failed login conditions
+
+  Scenario Outline: Test SUCCESSFUL login functionality using VALID credentials
+Given User is on page : http://alpha.autobars-voa-gov.uk
+    And I enter a <username>
+    And I enter <password>
+    And User clicks Signin
+    Then Message displayed is : <msg>
+    When user signsout from the autobars application
+    And close the browser
+
+    Examples: 
+      | username    | password       | msg                                      |
+      | "redbridge" | "japanesenods" | Welcome Redbridge                        |

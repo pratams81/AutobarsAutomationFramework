@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerTest" project="AutobarsAutomationCucumber" tests="46" started="0" failures="0" errors="3" ignored="0">
+  <testsuite name="com.cucumber.mavenAutobarsAutomation.RunnerTest">
+    <testsuite name="Feature: Tests Successful and failed login conditions">
+      <testsuite name="Scenario Outline: Test SUCCESSFUL login functionality using VALID credentials">
+        <testsuite name="Examples:" incomplete="true">
+          <error>java.lang.NoSuchMethodError: gherkin.formatter.model.Scenario.getId()Ljava/lang/String;&#13;
+	at cucumber.runtime.ScenarioImpl.&lt;init&gt;(ScenarioImpl.java:28)&#13;
+	at cucumber.runtime.Runtime.buildBackendWorlds(Runtime.java:145)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:38)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+          <testsuite name="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true">
+            <testcase name="Given User is on page : https://autobars-alpha.herokuapp.com/login" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+            <testcase name="And I enter a &quot;ealing&quot;" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+            <testcase name="And I enter &quot;japanesenods&quot;" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+            <testcase name="And User clicks Signin" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+            <testcase name="Then Message displayed is : Welcome Ealing Council" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+            <testcase name="When user signsout from the autobars application" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+            <testcase name="And close the browser" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| &quot;hshire&quot; | &quot;japanesenods&quot; | Welcome Huntingdonshire District Council |" incomplete="true">
+            <testcase name="Given User is on page : https://autobars-alpha.herokuapp.com/login" classname="| &quot;hshire&quot; | &quot;japanesenods&quot; | Welcome Huntingdonshire District Council |" incomplete="true"/>
+            <testcase name="And I enter a &quot;hshire&quot;" classname="| &quot;hshire&quot; | &quot;japanesenods&quot; | Welcome Huntingdonshire District Council |" incomplete="true"/>
+            <testcase name="And I enter &quot;japanesenods&quot;" classname="| &quot;hshire&quot; | &quot;japanesenods&quot; | Welcome Huntingdonshire District Council |" incomplete="true"/>
+            <testcase name="And User clicks Signin" classname="| &quot;hshire&quot; | &quot;japanesenods&quot; | Welcome Huntingdonshire District Council |" incomplete="true"/>
+            <testcase name="Then Message displayed is : Welcome Huntingdonshire District Council" classname="| &quot;hshire&quot; | &quot;japanesenods&quot; | Welcome Huntingdonshire District Council |" incomplete="true"/>
+            <testcase name="When user signsout from the autobars application" classname="| &quot;hshire&quot; | &quot;japanesenods&quot; | Welcome Huntingdonshire District Council |" incomplete="true"/>
+            <testcase name="And close the browser" classname="| &quot;hshire&quot; | &quot;japanesenods&quot; | Welcome Huntingdonshire District Council |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| &quot;redbridge&quot; | &quot;japanesenods&quot; | Welcome Redbridge |" incomplete="true">
+            <testcase name="Given User is on page : https://autobars-alpha.herokuapp.com/login" classname="| &quot;redbridge&quot; | &quot;japanesenods&quot; | Welcome Redbridge |" incomplete="true"/>
+            <testcase name="And I enter a &quot;redbridge&quot;" classname="| &quot;redbridge&quot; | &quot;japanesenods&quot; | Welcome Redbridge |" incomplete="true"/>
+            <testcase name="And I enter &quot;japanesenods&quot;" classname="| &quot;redbridge&quot; | &quot;japanesenods&quot; | Welcome Redbridge |" incomplete="true"/>
+            <testcase name="And User clicks Signin" classname="| &quot;redbridge&quot; | &quot;japanesenods&quot; | Welcome Redbridge |" incomplete="true"/>
+            <testcase name="Then Message displayed is : Welcome Redbridge" classname="| &quot;redbridge&quot; | &quot;japanesenods&quot; | Welcome Redbridge |" incomplete="true"/>
+            <testcase name="When user signsout from the autobars application" classname="| &quot;redbridge&quot; | &quot;japanesenods&quot; | Welcome Redbridge |" incomplete="true"/>
+            <testcase name="And close the browser" classname="| &quot;redbridge&quot; | &quot;japanesenods&quot; | Welcome Redbridge |" incomplete="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+      <testsuite name="Scenario Outline: Test FAILED login functionality using INVALID credentials">
+        <testsuite name="Examples:" incomplete="true">
+          <error>java.lang.NoSuchMethodError: gherkin.formatter.model.Scenario.getId()Ljava/lang/String;&#13;
+	at cucumber.runtime.ScenarioImpl.&lt;init&gt;(ScenarioImpl.java:28)&#13;
+	at cucumber.runtime.Runtime.buildBackendWorlds(Runtime.java:145)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:38)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+          <testsuite name="| &quot;ealing&quot; | &quot;japanesenod&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true">
+            <testcase name="Given User is on page : https://autobars-alpha.herokuapp.com/login" classname="| &quot;ealing&quot; | &quot;japanesenod&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="And I enter a &quot;ealing&quot;" classname="| &quot;ealing&quot; | &quot;japanesenod&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="And I enter &quot;japanesenod&quot;" classname="| &quot;ealing&quot; | &quot;japanesenod&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="And User clicks Signin" classname="| &quot;ealing&quot; | &quot;japanesenod&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="Then Error message displayed is : Your username or password have not been recognised. Please verify them and try again." classname="| &quot;ealing&quot; | &quot;japanesenod&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="And close the browser" classname="| &quot;ealing&quot; | &quot;japanesenod&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| &quot;hshir&quot; | &quot;japanesenods&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true">
+            <testcase name="Given User is on page : https://autobars-alpha.herokuapp.com/login" classname="| &quot;hshir&quot; | &quot;japanesenods&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="And I enter a &quot;hshir&quot;" classname="| &quot;hshir&quot; | &quot;japanesenods&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="And I enter &quot;japanesenods&quot;" classname="| &quot;hshir&quot; | &quot;japanesenods&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="And User clicks Signin" classname="| &quot;hshir&quot; | &quot;japanesenods&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="Then Error message displayed is : Your username or password have not been recognised. Please verify them and try again." classname="| &quot;hshir&quot; | &quot;japanesenods&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="And close the browser" classname="| &quot;hshir&quot; | &quot;japanesenods&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| &quot;redbridge&quot; | &quot;japaneseno&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true">
+            <testcase name="Given User is on page : https://autobars-alpha.herokuapp.com/login" classname="| &quot;redbridge&quot; | &quot;japaneseno&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="And I enter a &quot;redbridge&quot;" classname="| &quot;redbridge&quot; | &quot;japaneseno&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="And I enter &quot;japaneseno&quot;" classname="| &quot;redbridge&quot; | &quot;japaneseno&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="And User clicks Signin" classname="| &quot;redbridge&quot; | &quot;japaneseno&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="Then Error message displayed is : Your username or password have not been recognised. Please verify them and try again." classname="| &quot;redbridge&quot; | &quot;japaneseno&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+            <testcase name="And close the browser" classname="| &quot;redbridge&quot; | &quot;japaneseno&quot; | Your username or password have not been recognised. Please verify them and try again. |" incomplete="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: Tests Successful submission of Billing authority XML file">
+      <testsuite name="Scenario Outline: Test SUCCESSFUL submission of BA XML files">
+        <testsuite name="Examples:" incomplete="true">
+          <error>java.lang.NoSuchMethodError: gherkin.formatter.model.Scenario.getId()Ljava/lang/String;&#13;
+	at cucumber.runtime.ScenarioImpl.&lt;init&gt;(ScenarioImpl.java:28)&#13;
+	at cucumber.runtime.Runtime.buildBackendWorlds(Runtime.java:145)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:38)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#13;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+          <testsuite name="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true">
+            <testcase name="Given User is on page : https://autobars-alpha.herokuapp.com/login" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+            <testcase name="And I enter a &quot;ealing&quot;" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+            <testcase name="And I enter &quot;japanesenods&quot;" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+            <testcase name="And User clicks Signin" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+            <testcase name="Then Message displayed is : Welcome Ealing Council" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+            <testcase name="When user clicks Council Tax link" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+            <testcase name="Then &lt;Council Tax&gt; page is opened" classname="| &quot;ealing&quot; | &quot;japanesenods&quot; | Welcome Ealing Council |" incomplete="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

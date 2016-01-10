@@ -1,0 +1,20 @@
+Feature: Tests Successful submission of Billing authority XML file
+
+  Scenario Outline: Test SUCCESSFUL submission of BA XML files
+    Given User is on page : https://autobars-alpha.herokuapp.com/login
+    And I enter a <username>
+    And I enter <password>
+    And User clicks Signin
+    Then Message displayed is : <msg>
+    When user clicks Council Tax link
+    Then Council Tax page is opened
+    When user clicks Upload Reports link
+    Then Upload your Council Tax Reports page is opened
+    And user clicks Click to attach file
+    
+    #And selects a valid BA XML file
+    #And clicks Submit
+    #Then <> out of <> reports should be submitted successfully
+    Examples: 
+      | username | password       | msg                    |
+      | "ealing" | "japanesenods" | Welcome Ealing Council |
